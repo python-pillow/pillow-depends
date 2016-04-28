@@ -8,7 +8,7 @@ AppVeyor
 
 These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/appveyor.yml#L15) like so:
 
-```
+```yaml
 install:
 - git clone https://github.com/python-pillow/pillow-depends.git c:\pillow-depends
 - xcopy c:\pillow-depends\*.zip c:\pillow\winbuild\
