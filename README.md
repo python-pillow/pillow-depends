@@ -6,7 +6,7 @@ Pillow dependency sources -- cached for ci builds
 AppVeyor
 --------
 
-These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/appveyor.yml#L18) like so:
+These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/appveyor.yml#L26) like so:
 
 ```yaml
 install:
