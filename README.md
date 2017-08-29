@@ -17,6 +17,11 @@ install:
 - xcopy c:\pillow-depends\*.tar.gz c:\pillow\winbuild\
 - xcopy /s c:\pillow-depends\test_images\* c:\pillow\tests\images
 - cd c:\pillow\winbuild\
+- ps: |
+      if ($env:PYTHON -eq "c:/vp/pypy2")
+      {
+        c:\pillow\winbuild\appveyor_install_pypy.cmd
+      }
 - c:\python34\python.exe c:\pillow\winbuild\build_dep.py
 - c:\pillow\winbuild\build_deps.cmd
 ```
