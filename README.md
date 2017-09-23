@@ -6,7 +6,7 @@ Pillow dependency sources -- cached for ci builds
 AppVeyor
 --------
 
-These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/appveyor.yml#L26) like so:
+These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/appveyor.yml#L33) like so:
 
 ```yaml
 install:
@@ -22,6 +22,15 @@ install:
       {
         c:\pillow\winbuild\appveyor_install_pypy.cmd
       }
-- c:\python34\python.exe c:\pillow\winbuild\build_dep.py
-- c:\pillow\winbuild\build_deps.cmd
+- ps: |
+      if ($env:PYTHON -eq "c:/msys64/mingw32")
+      {
+        c:\msys64\usr\bin\bash -l -c c:\\pillow\\winbuild\\appveyor_install_msys2_deps.sh
+      }
+      else
+      {
+        c:\python34\python.exe c:\pillow\winbuild\build_dep.py
+        c:\pillow\winbuild\build_deps.cmd
+        $host.SetShouldExit(0)  
+      }
 ```
