@@ -6,7 +6,7 @@ Pillow dependency sources -- cached for ci builds
 AppVeyor
 --------
 
-These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/appveyor.yml#L33) like so:
+These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/appveyor.yml#L31) like so:
 
 ```yaml
 install:
@@ -31,6 +31,6 @@ install:
       {
         c:\python34\python.exe c:\pillow\winbuild\build_dep.py
         c:\pillow\winbuild\build_deps.cmd
-        $host.SetShouldExit(0)  
+        $host.SetShouldExit(0)
       }
 ```
