@@ -3,6 +3,11 @@ pillow-depends
 
 Pillow dependency sources -- cached for ci builds
 
+Pillow Wheels
+-------------
+
+These are used in the [Pillow Wheel Builder](https://github.com/python-pillow/pillow-wheels)
+
 AppVeyor
 --------
 
