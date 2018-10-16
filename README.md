@@ -16,7 +16,7 @@ These are used in Travis CI through the [Pillow depends scripts](https://github.
 AppVeyor
 --------
 
-These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/.appveyor.yml#L31) like so:
+These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/.appveyor.yml#L37) like so:
 
 ```yaml
 install:
