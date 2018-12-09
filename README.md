@@ -1,7 +1,7 @@
 pillow-depends
 ==============
 
-Pillow dependency sources -- cached for ci builds
+Pillow dependency sources -- cached for CI builds
 
 Pillow Wheels
 -------------
