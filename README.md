@@ -16,15 +16,10 @@ These are used in Travis CI through the [Pillow depends scripts](https://github.
 AppVeyor
 --------
 
-These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/.appveyor.yml#L34) like so:
+These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/.appveyor.yml#L35) like so:
 
 ```yaml
 install:
-- ps: |
-      if ($env:PYTHON -eq "C:\Python38rc1-x64") {
-        curl -o install_python.ps1 https://raw.githubusercontent.com/matthew-brett/multibuild/d0cf77e62028704875073e3dc4626f61d1c33b0e/install_python.ps1
-        .\install_python.ps1
-      }
 - curl -fsSL -o pillow-depends.zip https://github.com/python-pillow/pillow-depends/archive/master.zip
 - 7z x pillow-depends.zip -oc:\
 - mv c:\pillow-depends-master c:\pillow-depends
