@@ -16,7 +16,7 @@ These are used in Travis CI through the [Pillow depends scripts](https://github.
 AppVeyor
 --------
 
-These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/.appveyor.yml#L27) like so:
+These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/.appveyor.yml#L21) like so:
 
 ```yaml
 install:
@@ -30,15 +30,8 @@ install:
 - path c:\nasm-2.14.02;C:\Program Files (x86)\gs\gs9.52\bin;%PATH%
 - cd c:\pillow\winbuild\
 - ps: |
-      if ($env:PYTHON -eq "c:/msys64/mingw32")
-      {
-        c:\msys64\usr\bin\bash -l -c c:\\pillow\\winbuild\\appveyor_install_msys2_deps.sh
-      }
-      else
-      {
         c:\python37\python.exe c:\pillow\winbuild\build_prepare.py -v --depends=C:\pillow-depends\
         c:\pillow\winbuild\build\build_dep_all.cmd
         $host.SetShouldExit(0)
-      }
 - path C:\pillow\winbuild\build\bin;%PATH%
 ```
