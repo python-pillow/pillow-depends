@@ -1,7 +1,6 @@
 from https://github.com/uclouvain/openjpeg-data
 
-```
-These files were originally developed by Algo Vision Technology GmbH,
+> These files were originally developed by Algo Vision Technology GmbH,
 Aware Inc., Kodak Inc., and Ricoh Innovations Inc., in the course of
 development of ITU-T 803 | ISO/IEC 15444-4.  The files help test parts
 of implementations of a part of ITU-T 800 | ISO/IEC 15444-1. Copyright
@@ -19,6 +18,5 @@ own purpose, assign or donate these files to any third party and to
 inhibit third parties from using this software module for non JPEG
 2000 Standard conforming products. This copyright notice must be
 included in all copies or derivative works of these files.
-
-Copyright (c) 2002.
-```
+>
+> Copyright (c) 2002.
