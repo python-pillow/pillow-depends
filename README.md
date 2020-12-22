@@ -8,10 +8,10 @@ Pillow Wheels
 
 These are used in the [Pillow Wheel Builder](https://github.com/python-pillow/pillow-wheels)
 
-Travis CI
----------
+GitHub Actions
+--------------
 
-These are used in Travis CI through the [Pillow depends scripts](https://github.com/python-pillow/Pillow/tree/master/depends)
+These are used in GitHub Actions through the [Pillow depends scripts](https://github.com/python-pillow/Pillow/tree/master/depends)
 
 AppVeyor
 --------
