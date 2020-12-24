@@ -23,7 +23,7 @@ install:
 - curl -fsSL -o pillow-depends.zip https://github.com/python-pillow/pillow-depends/archive/master.zip
 - 7z x pillow-depends.zip -oc:\
 - mv c:\pillow-depends-master c:\pillow-depends
-- xcopy /s c:\pillow-depends\test_images\* c:\pillow\tests\images
+- xcopy /S /Y c:\pillow-depends\test_images\* c:\pillow\tests\images
 - 7z x ..\pillow-depends\nasm-2.14.02-win64.zip -oc:\
 - ..\pillow-depends\gs9533w32.exe /S
 - path c:\nasm-2.14.02;C:\Program Files (x86)\gs\gs9.53.3\bin;%PATH%
@@ -33,4 +33,5 @@ install:
         c:\pillow\winbuild\build\build_dep_all.cmd
         $host.SetShouldExit(0)
 - path C:\pillow\winbuild\build\bin;%PATH%
+- '%PYTHON%\%EXECUTABLE% -m pip install -U "setuptools>=49.3.2"'
 ```
