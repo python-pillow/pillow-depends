@@ -11,18 +11,18 @@ These are used in the [Pillow Wheel Builder](https://github.com/python-pillow/pi
 GitHub Actions
 --------------
 
-These are used in GitHub Actions through the [Pillow depends scripts](https://github.com/python-pillow/Pillow/tree/master/depends)
+These are used in GitHub Actions through the [Pillow depends scripts](https://github.com/python-pillow/Pillow/tree/main/depends)
 
 AppVeyor
 --------
 
-These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/master/.appveyor.yml#L21) like so:
+These are used in Pillow's [AppVeyor configuration file](https://github.com/python-pillow/Pillow/blob/main/.appveyor.yml#L21) like so:
 
 ```yaml
 install:
-- curl -fsSL -o pillow-depends.zip https://github.com/python-pillow/pillow-depends/archive/master.zip
+- curl -fsSL -o pillow-depends.zip https://github.com/python-pillow/pillow-depends/archive/main.zip
 - 7z x pillow-depends.zip -oc:\
-- mv c:\pillow-depends-master c:\pillow-depends
+- mv c:\pillow-depends-main c:\pillow-depends
 - xcopy /S /Y c:\pillow-depends\test_images\* c:\pillow\tests\images
 - 7z x ..\pillow-depends\nasm-2.15.05-win64.zip -oc:\
 - ..\pillow-depends\gs9540w32.exe /S
