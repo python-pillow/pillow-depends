@@ -20,13 +20,14 @@ These are used in Pillow's [AppVeyor configuration file](https://github.com/pyth
 
 ```yaml
 install:
+- '%PYTHON%\%EXECUTABLE% --version'
 - curl -fsSL -o pillow-depends.zip https://github.com/python-pillow/pillow-depends/archive/main.zip
 - 7z x pillow-depends.zip -oc:\
 - mv c:\pillow-depends-main c:\pillow-depends
 - xcopy /S /Y c:\pillow-depends\test_images\* c:\pillow\tests\images
 - 7z x ..\pillow-depends\nasm-2.15.05-win64.zip -oc:\
-- ..\pillow-depends\gs9540w32.exe /S
-- path c:\nasm-2.15.05;C:\Program Files (x86)\gs\gs9.54.0\bin;%PATH%
+- ..\pillow-depends\gs9550w32.exe /S
+- path c:\nasm-2.15.05;C:\Program Files (x86)\gs\gs9.55.0\bin;%PATH%
 - cd c:\pillow\winbuild\
 - ps: |
         c:\python37\python.exe c:\pillow\winbuild\build_prepare.py -v --depends=C:\pillow-depends\
