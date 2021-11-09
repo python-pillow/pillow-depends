@@ -34,5 +34,4 @@ install:
         c:\pillow\winbuild\build\build_dep_all.cmd
         $host.SetShouldExit(0)
 - path C:\pillow\winbuild\build\bin;%PATH%
-- '%PYTHON%\%EXECUTABLE% -m pip install -U setuptools'
 ```
