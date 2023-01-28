@@ -24,7 +24,6 @@ install:
 - curl -fsSL -o pillow-depends.zip https://github.com/python-pillow/pillow-depends/archive/main.zip
 - 7z x pillow-depends.zip -oc:\
 - mv c:\pillow-depends-main c:\pillow-depends
-- xcopy /S /Y c:\pillow-depends\test_images\* c:\pillow\tests\images
 - 7z x ..\pillow-depends\nasm-2.15.05-win64.zip -oc:\
 - ..\pillow-depends\gs1000w32.exe /S
 - path c:\nasm-2.15.05;C:\Program Files (x86)\gs\gs10.0.0\bin;%PATH%
