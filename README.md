@@ -32,7 +32,7 @@ install:
 - path c:\nasm-2.15.05;C:\Program Files\gs\gs10.00.0\bin;%PATH%
 - cd c:\pillow\winbuild\
 - ps: |
-        c:\python37\python.exe c:\pillow\winbuild\build_prepare.py -v --depends=C:\pillow-depends\
+        c:\python38\python.exe c:\pillow\winbuild\build_prepare.py -v --depends=C:\pillow-depends\
         c:\pillow\winbuild\build\build_dep_all.cmd
         $host.SetShouldExit(0)
 - path C:\pillow\winbuild\build\bin;%PATH%
