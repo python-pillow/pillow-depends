@@ -11,4 +11,8 @@ These are used in the [Pillow Wheel Builder](https://github.com/python-pillow/pi
 GitHub Actions
 --------------
 
-These are used in GitHub Actions through the [Pillow depends scripts](https://github.com/python-pillow/Pillow/tree/main/depends)
+These are used in GitHub Actions when
+[building wheels](https://github.com/python-pillow/Pillow/tree/main/wheels),
+[building for Windows](https://github.com/python-pillow/Pillow/tree/main/winbuild), and
+through the
+[Pillow depends scripts](https://github.com/python-pillow/Pillow/tree/main/depends).
